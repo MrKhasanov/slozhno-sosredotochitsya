@@ -10,3 +10,7 @@
   --fonts-color:#DB00FF;
   --accent-color: #FF0070;
 }
+
+body {
+  margin: 0 auto;
+}

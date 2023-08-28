@@ -12,16 +12,20 @@
 
 }
 
+body {
+  margin: 0 auto;
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
  background-image: var(--bg-image-light);
-  --accent-color:#FF0070; 
-  --text-color: #353430;
-  --bg-color:#ff8dcb;
-  --fonts-color:#FFC2E6;
+ --accent-color:#FF0070; 
+ --text-color: #353430;
+ --bg-color:#ff8dcb;
+ --fonts-color:#FFC2E6;
 
   .header-rec {
     display: none;
