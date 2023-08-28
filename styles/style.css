@@ -10,6 +10,10 @@
   --bg-image-light: url(../images/cover-image-light.png);
   --bg-image-dark: url(../images/cover-image-dark.png);
 }
+body {
+  margin: 0 auto;
+}
+
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -19,13 +23,12 @@
   background-image: var(--bg-image-dark, #000);
   background-attachment: fixed;
   margin-inline-start: 0.7em;
-  margin-inline-end: 0.7em;
+  margin-inline-end: ;
 }
 
 .decorated-zone {
   display: flex;
   min-width: 375px;
-
   color: var(--accent-color);
   position: relative;
 }
@@ -56,7 +59,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3em 9em 18.3em 11.5em;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .header__theme-menu {
@@ -197,6 +200,8 @@
     width: 768px;
     height: 1024px;
   }
+
+  
 }
 
 @media screen and (min-width: 1024px) {
@@ -213,7 +218,6 @@
   }
   .header__theme-menu {
     grid-row: 1;
-    align-self: center;
     justify-content: center;
     justify-self: center;
     justify-content: space-between;
@@ -235,7 +239,7 @@
 
 .section {
   display: grid;
-  grid-template-columns: minmax(365px, 1fr);
+  grid-template-columns: minmax(375px, 1fr);
   grid-template-rows: 1fr;
 }
 
@@ -249,7 +253,7 @@
   text-align: left;
   padding-bottom: 0.9em;
   padding-top: 2em;
-  max-width: 95vw;
+  max-width: 90vw;
 }
 
 .section_title {
@@ -278,19 +282,21 @@
 
 .article-top {
   display: grid;
-  width: calc(100% - 0.8em);
+  width: calc(100% - 1.2em);
   gap: 1em;
 }
 
 .article__center {
   display: grid;
+  width: calc(100% - 0.8em);
   gap: 1em;
   list-style-type: none;
 }
 
 .article_bottom {
   display: grid;
-  padding-block-start: 0.4em;
+  width: calc(100% - 0.8em);
+  padding-block-start: 0.5em;
   gap: 1em;
 }
 
@@ -356,11 +362,12 @@
 .section__image {
   display: grid;
   padding-top: 3em;
+  width: calc(100% - 0.8em);
 }
 
 .cards {
   display: grid;
-  gap: 0.7em;
+  gap: 0.8em;
   padding-top: 10px;
 }
 
@@ -422,13 +429,14 @@
   text-shadow: 2px 2px 0 var(--bg-color);
 }
 .title:not(.section_title) {
-  padding-top: 40px;
+  padding-top: 55px;
 }
 
 @media screen and (min-width: 768px) {
   .cards {
     display: grid;
     min-width: 100%;
+    min-height: 823px;
     flex-grow: 1;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -468,7 +476,7 @@
   }
   .title {
     grid-column: 1;
-    max-width: 20em;
+    max-width: 13em;
   }
   .article-top {
     grid-column: 2;
@@ -512,6 +520,7 @@
   .title {
     grid-column: 1;
     grid-row: 1;
+    max-width: 15em;
   }
 
   .one {

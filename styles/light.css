@@ -22,7 +22,10 @@
   --text-color: #353430;
   --bg-color:#ff8dcb;
   --fonts-color:#FFC2E6;
- 
+
+  .header-rec {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: theme_light) {
@@ -32,10 +35,4 @@
     --bg-color:#ff8dcb;
     --fonts-color: #FFC2E6;
    }
-}
-
-.page.theme_light {
-  .header-rec{
-    display: none;
-  }
 }
