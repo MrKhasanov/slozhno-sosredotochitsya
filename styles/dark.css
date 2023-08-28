@@ -3,10 +3,31 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-.page.theme_dark {
+:root {
+  --bg-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-color: #FF0070;
+  --fonts-color:#DB00FF;
+}
+.page.theme_dark { 
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  :root {
+    --bg-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-color: #FF0070;
+    --fonts-color:#DB00FF;
+  }
 }
+
+@media (prefers-color-scheme: theme_dark) {
+  :root {
+    --bg-color: #ff0070;
+    --text-color: #f1b2ce;
+    --accent-color: #FF0070;
+    --fonts-color:#DB00FF;
+}
+}
+
