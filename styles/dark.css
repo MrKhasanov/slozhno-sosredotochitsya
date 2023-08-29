@@ -29,12 +29,4 @@ body {
   }
 }
 
-@media (prefers-color-scheme: theme_dark) {
-  :root {
-    --bg-color: #ff0070;
-    --text-color: #f1b2ce;
-    --accent-color: #ff0070;
-    --fonts-color: #db00ff;
-    --title-text-color: #000028;
-  }
-}
+

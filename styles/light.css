@@ -33,7 +33,7 @@ body {
   }
 }
 
-@media (prefers-color-scheme: theme_light) {
+@media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
     --text-color: #353430;
@@ -42,3 +42,4 @@ body {
     --title-text-color: #353430;
   }
 }
+
