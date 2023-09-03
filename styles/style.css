@@ -372,11 +372,12 @@ body {
   line-height: 82.5%; /* 95.7px */
 }
 
-@media screen and (width >= 768px) {
+@media screen and (min-width: 768px) {
   .decorated-zone {
     display: grid;
     grid-template-rows: 4em 14.2em 28em 5.4em;
     width: 99vw;
+    min-height: 1024px;
     transition: all 0.5s ease-in;
   }
 
