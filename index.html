@@ -10,11 +10,12 @@
     <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/light.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
+    <link rel="stylesheet" href="./styles/light.css" />
+    
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -44,7 +45,7 @@
           </li>
         </ul>
       </nav>
-      <p class="header__rec" aria-hidden="true">rec</p>
+      <span class="header__rec" aria-hidden="true">rec</span>
       <h1 class="header__title">no focus</h1>
       <h2 class="heading header__text title__decor">
         Что делать, когда не можешь делать ничего<br />
@@ -54,7 +55,7 @@
     <main class="main">
       <section class="section">
         <h2 class="title">Почему сосредоточиться так сложно</h2>
-        <div class="section__top">
+        <article class="section__center">
           <h3 class="subtitle subtitle__top">Многозадачность</h3>
           <p class="text section__text">
             Особенно сложно сосредоточиться, когда задач много и все они —
@@ -83,12 +84,12 @@
             удовольствие. Получается замкнутый круг: чем больше отвлекаешься,
             тем больше удовольствия получаешь.
           </p>
-        </div>
+        </article>
       </section>
       <section class="section__center">
         <h2 class="title">Что снижает концентрацию внимания?</h2>
-        <ul class="article__center">
-          <li class="article__first">
+        <article class="article__center">
+          <div class="article__first">
             <h3 class="subtitle subtitle__center">Многозадачность</h3>
             <p class="text section__text">
               Как концентрация может снижаться из-за… концентрации? Любая
@@ -98,8 +99,8 @@
               собранными всё время — невозможно. Концентрация — мышца, и она
               может не выдержать, если не давать ей отдохнуть.
             </p>
-          </li>
-          <li class="article__second">
+          </div>
+          <div class="article__second">
             <h3 class="subtitle subtitle__center">Еда</h3>
             <p class="text section__text">
               «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно
@@ -109,8 +110,8 @@
               углеводов» заканчивается, мы чувствуем усталость и сонливость. И
               хотим ещё больше быстрых углеводов.
             </p>
-          </li>
-          <li class="article__third">
+          </div>
+          <div class="article__third">
             <h3 class="subtitle subtitle__center">Гаджеты</h3>
             <p class="text section__text">
               Да-да, это та самая ситуация, когда на экране ноутбука — код, в
@@ -121,8 +122,8 @@
               Вот и получается, что чем больше времени мы проводим в гаджетах,
               тем больше времени затем нужно, чтобы вернуться к работе.
             </p>
-          </li>
-        </ul>
+          </div>
+        </article>
       </section>
       <section class="section__buttom">
         <h2 class="title">
@@ -228,7 +229,7 @@
       </section>
     </main>
     <footer class="footer">
-      <p class="header__title footer__title">focus</p>
+      <h2 class="footer__title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
