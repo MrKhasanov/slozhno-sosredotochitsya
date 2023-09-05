@@ -4,21 +4,19 @@
   переключая тему
 */
 
-
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-image: var(--bg-image-light, #FFF1F7);
-
-  --background-color:#FFF1F7; 
+  --bg-image: url(../images/cover-image-light.png);
+  --background-color: #fff1f7;
   --accent-color: #353430;
   --text-color: #353430;
   --bg-color: #ff8dcb;
   --fonts-color: #ffc2e6;
   --title-text-color: #353430;
-  --button-hover-color: rgba(50, 49, 45, 0.40);
+  --button-hover-color: rgba(50, 49, 45, 0.4);
 
   .header__rec {
     visibility: hidden;
@@ -27,20 +25,17 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color:#FFF1F7;
+    --background-color: #fff1f7;
     --accent-color: #353430;
     --text-color: #353430;
     --bg-color: #ff8dcb;
     --fonts-color: #ffc2e6;
     --title-text-color: #353430;
-    --button-hover-color: rgba(50, 49, 45, 0.40);
-    
-    background-image: var(--bg-image-light, #FFF1F7);
-    
-   .page.theme_auto .header__rec {
-    visibility: hidden;
-   }
+    --button-hover-color: rgba(50, 49, 45, 0.4);
+    --bg-image: url(../images/cover-image-light.png);
+
+    .page.theme_auto .header__rec {
+      visibility: hidden;
+    }
   }
 }
-
-

@@ -4,22 +4,18 @@
   переключая тему
 */
 
-
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-    background-image: var(--bg-image-dark, #000028);
-  
-    --background-color: #000028;
-    --bg-color: #ff0070;
-    --text-color: #f1b2ce;
-    --accent-color: #ff0070;
-    --fonts-color: #db00ff;
-    --title-text-color: #000028;
-    --button-hover-color:rgba(255, 0, 112, 0.40);
-    --bg-image-dark: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
+  --background-color: #000028;
+  --bg-color: #ff0070;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --fonts-color: #db00ff;
+  --title-text-color: #000028;
+  --button-hover-color: rgba(255, 0, 112, 0.4);
+  --bg-image: url(../images/cover-image-dark.png);
 }
-
-
