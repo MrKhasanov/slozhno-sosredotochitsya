@@ -18,8 +18,10 @@
   max-inline-size: 1440px;
   font-family: var(--accent-font, sans-serif);
   background-attachment: fixed;
+  background-position: center;
   padding-inline-start: 0.6em;
   background-image: var(--bg-image);
+  background-size: cover;
 }
 
 .decorated-zone {
